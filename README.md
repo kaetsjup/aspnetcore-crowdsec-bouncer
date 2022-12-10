@@ -7,7 +7,7 @@ A ASP.NET Core [CrowdSec bouncer](https://docs.crowdsec.net/docs/bouncers/intro)
 This middlware can be used for blocking or challenging malicious traffic using the [CrowdSec](https://crowdsec.net/) API.
 
 ## Usage
-Install the middleware using [NuGet](https://www.nuget.org/) (Pending):
+Install the middleware using [NuGet](https://www.nuget.org/):
 
 ```csharp
 dotnet add package AspNetCore.CrowdSec.Bouncer
