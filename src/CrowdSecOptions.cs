@@ -1,4 +1,4 @@
-namespace AspNetCore.CrowdSec;
+namespace AspNetCore.CrowdSec.Bouncer;
 
 public class CrowdSecOptions
 {

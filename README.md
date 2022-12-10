@@ -10,7 +10,7 @@ This middlware can be used for blocking or challenging malicious traffic using t
 Install the middleware using [NuGet](https://www.nuget.org/) (Pending):
 
 ```csharp
-dotnet add package AspNetCore.CrowdSec
+dotnet add package AspNetCore.CrowdSec.Bouncer
 ```
 
 then bootstrap the middleware in your ASP.NET Core application using the following options as minimum required:

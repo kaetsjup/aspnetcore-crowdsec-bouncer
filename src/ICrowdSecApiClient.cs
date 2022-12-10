@@ -1,6 +1,6 @@
 using System.Net;
 
-namespace AspNetCore.CrowdSec;
+namespace AspNetCore.CrowdSec.Bouncer;
 
 public interface ICrowdSecApiClient
 {

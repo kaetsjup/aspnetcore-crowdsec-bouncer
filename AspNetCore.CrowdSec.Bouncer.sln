@@ -1,12 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.CrowdSec", "src\AspNetCore.CrowdSec.csproj", "{B248EDA3-94C6-47D0-9E81-4B0CA4853D26}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.CrowdSec.Bouncer", "src\AspNetCore.CrowdSec.Bouncer.csproj", "{B248EDA3-94C6-47D0-9E81-4B0CA4853D26}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{837D52D7-1FB6-469C-B8C7-48657EEDE36E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{FADD359E-CB5B-463D-A8B2-B43A9A4E1FD2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNet.CrowdSec.Tests", "test\AspNet.CrowdSec.Tests.csproj", "{83116715-B726-461C-8B40-36DC9FF9F9C6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.CrowdSec.Bouncer.Tests", "test\AspNetCore.CrowdSec.Bouncer.Tests.csproj", "{83116715-B726-461C-8B40-36DC9FF9F9C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

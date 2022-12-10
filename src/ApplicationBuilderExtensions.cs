@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 
-namespace AspNetCore.CrowdSec;
+namespace AspNetCore.CrowdSec.Bouncer;
 
 public static class ApplicationBuilderExtensions
 {

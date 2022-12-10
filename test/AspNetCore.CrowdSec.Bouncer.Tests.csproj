@@ -23,7 +23,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AspNetCore.CrowdSec\AspNetCore.CrowdSec.csproj" />
+      <ProjectReference Include="..\src\AspNetCore.CrowdSec.Bouncer.csproj" />
     </ItemGroup>
 
 </Project>

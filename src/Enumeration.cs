@@ -2,21 +2,20 @@
  * Credit: https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/
  *         enumeration-classes-over-enum-types
  */
-
-// TODO (kaetsjup): code review missing.
 using System.Reflection;
 
-namespace AspNetCore.CrowdSec;
+namespace AspNetCore.CrowdSec.Bouncer;
 
 public abstract class Enumeration : IComparable
 {
- public string Name { get; private set; }
+ public string Name { get; }
+ public int Id { get; }
 
- public int Id { get; private set; }
+ protected Enumeration(int id, string name)
+  => (Id, Name) = (id, name);
 
- protected Enumeration(int id, string name) => (Id, Name) = (id, name);
-
- public override string ToString() => Name;
+ public override string ToString()
+  => Name;
 
  public static IEnumerable<T> GetAll<T>() where T : Enumeration =>
   typeof(T).GetFields(BindingFlags.Public |

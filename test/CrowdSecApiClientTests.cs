@@ -1,9 +1,9 @@
 using System.Net;
-using AspNetCore.CrowdSec;
+using AspNetCore.CrowdSec.Bouncer;
 using Moq;
 using Moq.Protected;
 
-namespace AspNet.CrowdSec.Tests;
+namespace AspNetCore.CrowdSec.Bouncer.Tests;
 
 public class CrowdSecApiClientTests
 {
@@ -42,7 +42,7 @@ public class CrowdSecApiClientTests
     }
     
     [Fact]
-    public async Task QueryIpAddressAsync_ApiSuccessResponse_ReturnsCrowdSecApiSuccessResponse()
+    public async Task QueryIpAddressAsync_ApiSuccessResponse_ReturnsCrowdSecApiQueryResult()
     {
         // Arrange
         var ipAddress = IPAddress.Parse("1.2.3.4");

@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace AspNetCore.CrowdSec;
+namespace AspNetCore.CrowdSec.Bouncer;
 
 public class CrowdSecMiddleware
 {
@@ -27,9 +27,8 @@ public class CrowdSecMiddleware
     
     public async Task InvokeAsync(HttpContext context)
     {
-        // TODO (kaetsjup): this needs refactoring. 
-        // Proper logging missing.
-        _logger.LogInformation($"Collecting ");
+        _logger.LogInformation($"{context.Connection.RemoteIpAddress} requesting " +
+                               $"resource: {context.Request.GetEncodedUrl()}");
         
         var ipAddress = context.Connection.RemoteIpAddress;
         var queryResult = await _crowdSecApiClient.QueryIpAddressAsync(ipAddress);

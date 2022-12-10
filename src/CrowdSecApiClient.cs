@@ -2,7 +2,7 @@ using System.Net;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 
-namespace AspNetCore.CrowdSec;
+namespace AspNetCore.CrowdSec.Bouncer;
 
 public class CrowdSecApiClient 
     : ICrowdSecApiClient
@@ -50,11 +50,11 @@ internal class ApiQueryResult
     [JsonPropertyName("id")]
     public int Id { get; set; }
     [JsonPropertyName("origin")]
-    public string Origin { get; set; }
+    public string? Origin { get; set; }
     [JsonPropertyName("type")]
-    public string Type { get; set; }
+    public string? Type { get; set; }
     [JsonPropertyName("value")]
-    public string Value { get; set; }
+    public string? Value { get; set; }
     [JsonPropertyName("duration")]
-    public string Duration { get; set; }
+    public string? Duration { get; set; }
 }
