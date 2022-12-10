@@ -4,6 +4,11 @@
         <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <Authors>Thomas Andersen (kaetsjup)</Authors>
+        <PackageProjectUrl>https://github.com/kaetsjup/aspnetcore-crowdsec-bouncer</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/kaetsjup/aspnetcore-crowdsec-bouncer/blob/main/LICENSE</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/kaetsjup/aspnetcore-crowdsec-bouncer</RepositoryUrl>
+        <RepositoryType>git</RepositoryType>
     </PropertyGroup>
 
     <ItemGroup>
