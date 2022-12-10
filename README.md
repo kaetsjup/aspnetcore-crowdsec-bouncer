@@ -1,3 +1,6 @@
+# WARNING:
+This is work-in-progress and therefore unstable!
+
 # CrowdSec Bouncer for ASP.NET Core
 A ASP.NET Core [CrowdSec bouncer](https://docs.crowdsec.net/docs/bouncers/intro) implementation written in C#.
 
@@ -40,5 +43,5 @@ The ASP.NET Core CrowdSec middleware Bouncer supports the following options:
 | `CaptchaChallengeUrl`      | URL for the captcha challenge (Can be relative or absolute).                                                       | `/captcha.html`         |
 
 ## Contributing
-please fork the repository and make changes as you'd like. Pull requests are more than welcome.
+Please fork the repository and make changes as you'd like. Pull requests are more than welcome.
 
